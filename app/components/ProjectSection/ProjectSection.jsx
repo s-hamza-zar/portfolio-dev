@@ -6,46 +6,61 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "DigitalOcean Cloudways Product",
+    description:
+      "Stack used: React, Redux tool kit, tailwind and Micro-frontend",
     image: "/images/projects/project-1.jpg",
+    websiteUrl:
+      "https://drive.google.com/file/d/1UfJHjqOwcoZcVHNh4-wQya_pT4ml_YSu/view",
+    githubUrl: "/",
     tag: ["All", "Web"],
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/image.png",
-    tag: ["All", "Web"],
+    title: "Employee Management System",
+    description: "Stack used:Dotnet/C# (Desktop App)",
+    image: "/images/projects/project-2.png",
+    websiteUrl:
+      "https://drive.google.com/file/d/1a4mWPu9DdcOcl8-0kv7iRt99Ia1LBYim/view",
+    githubUrl: "https://github.com/s-hamza-zar/EmployeeManagementSystem",
+    tag: ["All", "Desktop"],
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/image.png",
+    title: "Bindia.dk | A Food Ordering Website",
+    description: "Stack used: Html, Scss, JavaScript",
+    image: "/images/projects/project-3.png",
+    websiteUrl: "https://www.bindia.dk/en",
+    githubUrl: "/",
     tag: ["All", "Web"],
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/project-1.jpg",
-    tag: ["All", "Mobile"],
+    title: "An Ecommerce Store",
+    description: "Stack used: React, Scss, JavaScript",
+    image: "/images/projects/project-4.png",
+    websiteUrl: "https://organic-store-henna.vercel.app/",
+    githubUrl: "https://github.com/s-hamza-zar/Organic-Ecom-site",
+    tag: ["All", "Web"],
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/image.png",
+    title: "KeyView.ai",
+    description: "Stack used: React, Scss, Ant Design, Ai, Django",
+    image: "/images/projects/project-5.svg",
+    websiteUrl: "https://keyview.ai/",
+    githubUrl: "/",
     tag: ["All", "Web"],
   },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/project-1.jpg",
-    tag: ["All", "Web"],
-  },
+  // {
+  //   id: 6,
+  //   title: "Full-stack Roadmap",
+  //   description: "Project 5 description",
+  //   image: "/images/projects/project-1.jpg",
+  //   websiteUrl: "",
+  //   githubUrl: "",
+  //   tag: ["All", "Web"],
+  // },
 ];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
@@ -75,9 +90,9 @@ const ProjectSection = () => {
           isSelected={tag === "Web"}
         />
         <ProjectTag
-          name="Mobile"
+          name="Desktop"
           onClick={handleTagChange}
-          isSelected={tag == "Mobile"}
+          isSelected={tag == "Desktop"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -87,6 +102,8 @@ const ProjectSection = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
+            websiteUrl={project.websiteUrl}
+            githubUrl={project.githubUrl}
           />
         ))}
       </div>
