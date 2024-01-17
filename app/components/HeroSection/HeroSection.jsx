@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-
 const HeroSection = () => {
   return (
     <section>
@@ -31,20 +30,25 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            corporis illum exercitationem. Beatae, dolore debitis odit aliquid
-            repudiandae porro impedit vel itaque architecto iure eius. Quia
-            excepturi deleniti dolorem ut.
+            I am an experienced full stack engineer with a robust blend of
+            creative and problem-solving abilities.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white bg-gradient-to-br from-[#6E3DA2] via-purple-500 to-[#CD7BCF] hover:bg-slate-200 text-white">
-              Hire Me
-            </button>
-            <button className="px-1 py-1  w-full sm:w-fit rounded-full bg-gradient-to-br from-[#6E3DA2] via-purple-500 to-[#CD7BCF] hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </button>
+            <a href="mailto:s.hamza.zar@gmail.com">
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white bg-gradient-to-br from-[#6E3DA2] via-purple-500 to-[#CD7BCF] hover:bg-slate-200 text-white">
+                Hire Me
+              </button>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/17dCewgU6BKVyzaSN2CZMlmkIkcrbauIT/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer">
+              <button className="px-1 py-1  w-full sm:w-fit rounded-full bg-gradient-to-br from-[#6E3DA2] via-purple-500 to-[#CD7BCF] hover:bg-slate-800 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Download CV
+                </span>
+              </button>
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">

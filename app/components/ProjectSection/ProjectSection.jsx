@@ -52,15 +52,6 @@ const projectsData = [
     githubUrl: "/",
     tag: ["All", "Web"],
   },
-  // {
-  //   id: 6,
-  //   title: "Full-stack Roadmap",
-  //   description: "Project 5 description",
-  //   image: "/images/projects/project-1.jpg",
-  //   websiteUrl: "",
-  //   githubUrl: "",
-  //   tag: ["All", "Web"],
-  // },
 ];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");

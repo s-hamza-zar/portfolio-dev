@@ -13,7 +13,7 @@ const TAB_DATA = [
         <li>Angular</li>
         <li>SQl/noSQL</li>
         <li>.net/c#</li>
-        <li>Node Js</li>
+        <li>Node Js/Express</li>
         <li>MongoDb</li>
       </ul>
     ),
@@ -64,7 +64,7 @@ const AboutSection = () => {
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            .net, EF, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
