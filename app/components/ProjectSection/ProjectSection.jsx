@@ -45,7 +45,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "KeyView.ai",
+    title: "An AI Product used for Property Management",
     description: "Stack used: React, Scss, Ant Design, Ai, Django",
     image: "/images/projects/project-5.svg",
     websiteUrl: "https://keyview.ai/",
