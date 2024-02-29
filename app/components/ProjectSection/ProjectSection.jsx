@@ -51,7 +51,7 @@ const projectsData = [
     websiteUrl: "https://organicapi.azurewebsites.net/swagger/index.html",
     githubUrl:
       "https://github.com/s-hamza-zar/organic-store-backend/tree/master/organicEcomApi",
-    tag: ["All", "API"],
+    tag: ["All", "Backend"],
   },
   {
     id: 5,
@@ -98,7 +98,7 @@ const ProjectSection = () => {
         <ProjectTag
           name="Backend"
           onClick={handleTagChange}
-          isSelected={tag == "API"}
+          isSelected={tag == "Backend"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
