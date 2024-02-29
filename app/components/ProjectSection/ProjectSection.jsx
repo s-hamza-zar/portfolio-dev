@@ -44,6 +44,15 @@ const projectsData = [
     tag: ["All", "Web"],
   },
   {
+    id: 6,
+    title: "An Organic Store APIs",
+    description: "Stack used: c#, ASP .Net, EF, Azure",
+    image: "/images/projects/Organic-api.png",
+    websiteUrl: "https://organicapi.azurewebsites.net/swagger/index.html",
+    githubUrl: "https://github.com/s-hamza-zar/Organic-store-backend",
+    tag: ["All", "API"],
+  },
+  {
     id: 5,
     title: "An AI Product used for Property Management",
     description: "Stack used: React, Scss, Ant Design, Ai, Django",
@@ -84,6 +93,11 @@ const ProjectSection = () => {
           name="Desktop"
           onClick={handleTagChange}
           isSelected={tag == "Desktop"}
+        />
+        <ProjectTag
+          name="Backend"
+          onClick={handleTagChange}
+          isSelected={tag == "API"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
