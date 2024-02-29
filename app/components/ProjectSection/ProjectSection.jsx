@@ -49,7 +49,8 @@ const projectsData = [
     description: "Stack used: c#, ASP .Net, EF, Azure",
     image: "/images/projects/Organic-api.png",
     websiteUrl: "https://organicapi.azurewebsites.net/swagger/index.html",
-    githubUrl: "https://github.com/s-hamza-zar/Organic-store-backend",
+    githubUrl:
+      "https://github.com/s-hamza-zar/organic-store-backend/tree/master/organicEcomApi",
     tag: ["All", "API"],
   },
   {
